@@ -2,7 +2,7 @@
 
 Addon bundles for K0rdent airgap environments. These bundles include both container images and Helm charts/manifests in a format compatible with the standard K0rdent bundle loading process.
 
-## 📦 Bundle Structure
+## Bundle Structure
 
 Each bundle archive (`*-addon-bundle.tar.gz`) includes:
 
@@ -15,7 +15,7 @@ addon-bundle/
 
 ````
 
-## ⚙️ Build Script
+## Build Script
 
 Use the provided script to build addon bundles:
 
@@ -26,7 +26,7 @@ Use the provided script to build addon bundles:
 # Version: 1.0.0
 ````
 
-## 📥 Installation
+## Installation
 
 1. **Extract the bundle**:
 
@@ -46,9 +46,9 @@ Use the provided script to build addon bundles:
    ./scripts/main/06-load-images-and-charts.sh
    ```
 
-## 📚 Available Bundles
+## Available Bundles
 
-### 🔹 Velero Backup Solution
+### Velero Backup Solution
 
 * **Bundle**: `velero-addon-bundle.tar.gz`
 * **Contains**:
@@ -57,7 +57,7 @@ Use the provided script to build addon bundles:
   * Velero core + plugins (AWS, GCP, Azure, CSI)
   * Restore helper + kubectl
 
-### 🔹 Local Path Provisioner
+### Local Path Provisioner
 
 * **Bundle**: `local-path-addon-bundle.tar.gz`
 * **Contains**:
@@ -65,7 +65,7 @@ Use the provided script to build addon bundles:
   * 2 images + raw manifest
 * **Deploy**: `kubectl apply -f`
 
-### 🔹 OpenEBS Storage
+### OpenEBS Storage
 
 * **Bundle**: `openebs-addon-bundle.tar.gz`
 * **Contains**:
@@ -73,7 +73,7 @@ Use the provided script to build addon bundles:
   * 4 images + Helm chart
 * **Deploy**: `helm install` after loading
 
-## 📝 Notes
+## Notes
 
 * Bundles follow **K0rdent's airgap format** exactly
 * Images and charts are co-located for streamlined loading
@@ -82,5 +82,4 @@ Use the provided script to build addon bundles:
 
 This approach ensures full compatibility with existing K0rdent airgap workflows — no changes needed.
 
-```
 ## martin / mes
