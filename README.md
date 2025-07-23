@@ -2,6 +2,11 @@
 
 Addon bundles for K0rdent airgap environments. These bundles include both container images and Helm charts/manifests in a format compatible with the standard K0rdent bundle loading process.
 
+If you are cloning this repository and need access to the full addon bundle files, you have two options:
+
+- Use git lfs pull after cloning to download large files tracked by Git LFS (requires Git LFS to be installed and configured).
+- Alternatively, download the bundles directly from the Releases page, which provides versioned .tar.gz archives without requiring Git LFS.
+
 ## Bundle Structure
 
 Each bundle archive (`*-addon-bundle.tar.gz`) includes:
